@@ -8,6 +8,8 @@
 .buildlog/
 .history
 .svn/
+*.hprof
+*.dump
 
 # IntelliJ IDEA / Android Studio
 *.iml
@@ -26,15 +28,26 @@
 .pub-cache/
 .pub/
 build/
+*.apk
+*.aab
 
 # Android
-android/app/debug
-android/app/profile
-android/app/release
+**/android/.gradle/
+.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
 android/key.properties
+android/local.properties
+**/android/local.properties
+*.jks
+*.keystore
 
 # Windows
 windows/flutter/ephemeral/
+windows/runner/Release/
+windows/runner/Debug/
+windows/runner/Profile/
 *.vcxproj
 *.vcxproj.filters
 *.sln
